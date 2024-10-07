@@ -25,29 +25,33 @@
         <h2>¡Compra ya antes de que tu ex lo haga!</h2>
 
         <!-- Nombre del concierto -->
-        <h3>Nombre del concierto</h3>
+        <h3 id="nombreConcierto"></h3>
 
         <!-- Imagen del concierto -->
-        <img src="IMAGENES/evento1.jpg" alt="Imagen del concierto">
+        <img id="imagenConcierto" src="" alt="Imagen del concierto">
 
         <!-- Opciones de compra: tipo de entrada -->
         <div class="entradas">
             <label>
-                <input type="radio" name="entrada" value="general" checked> General
+                <input type="radio" name="entrada" value="general" id="general"> General
             </label>
             <label>
-                <input type="radio" name="entrada" value="vip"> VIP
+                <input type="radio" name="entrada" value="vip" id="vip"> VIP
             </label>
         </div>
 
         <!-- Precio del concierto -->
-        <div class="precio">
-            <span>Precio:</span>
-            <span>1.000</span>
-        </div>
+        <p>Precio: <span id="precioConcierto">0</span></p>
 
         <!-- Botón para comprar la entrada -->
-        <button class="comprar">Comprar entrada</button>
+        <button class="comprar" id="comprarEntrada">Comprar entrada</button>
+
+        <div id="modalMensaje" class="modal">
+            <div class="modal-content">
+                <p id="modalMensajeTexto"></p>
+                <button id="aceptar">Aceptar</button>
+            </div>
+        </div>                
     </main>
     <footer>
         <ul>
@@ -55,6 +59,9 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </footer>
+
+    <script src="JAVASCRITP/ventaentrada.js"></script>
+
 </div>
 </body>
 </html>

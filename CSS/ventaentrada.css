@@ -115,3 +115,45 @@ button.comprar {
     font-size: 18px;
     cursor: pointer;
 }
+
+/* Estilo del mensaje emergente */
+.mensaje {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+/* Mostrar el mensaje */
+.mensaje.mostrar {
+    display: block;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* El modal permanecerá fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    z-index: 1000; /* Asegurarse de que el modal esté encima de otros elementos */
+}
+
+.modal-content {
+    background-color: #1B4F72;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+}
